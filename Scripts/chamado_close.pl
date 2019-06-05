@@ -17,8 +17,8 @@ my $Operation 		= 0;
 my $body 			= '';
 my $eventid 		= 0;
 my $subject 		= '';
-my $UserLogin 	= "zabbixmonitor";
-my $Password    = "1q2w3e4r";
+my $UserLogin 	= "#usuario";
+my $Password    = "#senha";
 my $system      = 'zabbix';
 
 GetOptions (
@@ -37,7 +37,7 @@ $Operation = "TicketUpdate";
 # Or
 # <HTTP_TYPE>:://<OTRS_FQDN>/nph-genericinterface.pl/WebserviceID/<WEB_SERVICE_ID>
 
-my $URL = "#URLA INTERFACE";
+my $URL = "#URL INTERFACE";
 
 # This name space should match the specified name space in the SOAP transport for the web service.
 my $NameSpace = 'http://www.otrs.org/TicketConnector/';
