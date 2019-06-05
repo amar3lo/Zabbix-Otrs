@@ -1,0 +1,1 @@
+perl /usr/lib/zabbix/alertscripts/fechar_chamado_zabbix.pl -subject 'Incidente normalizado' -body 'O incidente foi normalizado' -eventid {EVENT.ID}

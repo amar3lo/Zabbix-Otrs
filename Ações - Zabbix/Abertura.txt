@@ -1,0 +1,9 @@
+python /usr/lib/zabbix/alertscripts/chamado_create.py --otrs #IP_DO_OTRS# --webservice #NOME_DO_SERVIÇO# --user #NOME_DO_USUARIO# --pass #SENHA# --customer #NOME_DO_CLIENTE_OTRS# --eventid {EVENT.ID} --fila #FILA_OTRS# --servico #SERVIÇO_OTRS# --title "PROBLEMA: {TRIGGER.NAME} - {TRIGGER.STATUS}" --desc "O host abaixo apresentou problemas.
+Nome do Host: {HOST.HOST}
+Nome do Item: {ITEM.NAME}
+Nome da Trigger: {TRIGGER.STATUS}
+Status da Trigger: {TRIGGER.SEVERITY}
+Data do Evento: {EVENT.DATE}{EVENT.TIME}
+Data atual:{DATE}{TIME}
+Trigger ID: {TRIGGER.ID}
+Tempo Corrido: {EVENT.AGE}"
